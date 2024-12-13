@@ -1,7 +1,8 @@
-function Header () {
+function Header (props) {
+  const { headerText } = props
   return (
     <div>
-      <h1>InI halaman header</h1>
+      <h1>{headerText}</h1>
     </div>
   )
 }

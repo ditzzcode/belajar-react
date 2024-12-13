@@ -5,14 +5,24 @@ import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 
 function App() {
+  const headerText = "ini halaman header / utama";
+  const footerText = () => {
+    return (
+      <i>ini halaman Footer</i>
+    )
+  }
 
-
+  const footerHi = () => {
+    return (
+      <h1>halaman footer</h1>
+    )
+  }
   return (
     <>
-  <Header/>
+  <Header headerText={headerText}/>
   <MyButton/>
   <Navbar/>
-  <Footer/>
+  <Footer footerText={footerText} footerHi={footerHi}/>
     </>
   )
 }
